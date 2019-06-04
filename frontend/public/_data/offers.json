@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Horské kolo",
+    "description": "Ponukam k pujcenie me horske kolo Zetor s novymi sliapkami a novom brzdovom systeme.",
+    "photo": {
+      "thumbnail": "/data/offer.jpg",
+      "hire": "/data/offer.jpg"
+    },
+    "price": 500,
+    "lat": 50.0598,
+    "lng": 14.3255,
+    "owner": "uzivatel123"
+  },
+  {
+    "name": "Sada brusných vrtáků",
+    "description": "Půjčím sadu vrtáčků na použití do vrtačky Bosch.",
+    "photo": {
+      "thumbnail": "/data/offer.jpg",
+      "hire": "/data/offer.jpg"
+    },
+    "price": 100,
+    "lat": 49.7417,
+    "lng": 13.3018,
+    "owner": "userUser555"
+  },
+  {
+    "name": "Malá a velká gola",
+    "description": "Půjčím sadu velké a malé goly na použití do ruky.",
+    "photo": {
+      "thumbnail": "/data/offer.jpg",
+      "hire": "/data/offer.jpg"
+    },
+    "price": 200,
+    "lat": 49.7903,
+    "lng": 14.6594,
+    "owner": "goalkeeper22"
+  },
+  {
+    "name": "Sada nářadí",
+    "description": "Půjčím sadu nářadí. Více info na tel 123456789",
+    "photo": {
+      "thumbnail": "/data/offer.jpg",
+      "hire": "/data/offer.jpg"
+    },
+    "price": 230,
+    "lat": 49.2021,
+    "lng": 16.5079,
+    "owner": "razdvatri123"
+  }
+]

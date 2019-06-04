@@ -1,0 +1,38 @@
+[
+  {
+    "id": 3000,
+    "opponent": "Matyáš Neuvirth",
+    "owning": true,
+    "subject": "Nůžky na vlasy",
+    "messages": [{
+      "fromMe": false,
+      "time": "2019-04-12",
+      "message": "Dobrý den, šlo by si u Vás půjčit tyto skvělé nůžtičky?",
+      "read": false
+    }]
+  },
+  {
+    "id": 7843,
+    "opponent": "Jan Kraus",
+    "owning": false,
+    "subject": "Pistáciová zmrzka",
+    "messages": [{
+      "fromMe": false,
+      "time": "2019-04-12",
+      "message": "Ok, kornout přinesu",
+      "read": true
+    }]
+  },
+  {
+    "id": 3784,
+    "opponent": "Filip Uhlík",
+    "owning": true,
+    "subject": "Vanilkový rohlíčky",
+    "messages": [{
+      "fromMe": true,
+      "time": "2019-04-12",
+      "message": "Budu čekat na křižovatce",
+      "read": true
+    }]
+  }
+]

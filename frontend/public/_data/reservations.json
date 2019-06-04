@@ -1,0 +1,60 @@
+[{
+  "from": "2019-05-03",
+  "to": "2019-05-03",
+  "offer": {
+    "id": 2000,
+    "name": "Horské kolo",
+    "price": 355
+  },
+  "opponent": {
+    "id": 1001,
+    "firstname": "Antonín",
+    "lastname": "Podržkolo"
+  },
+  "chatId": 3000
+},
+{
+  "from": "2019-05-03",
+  "to": "2019-05-03",
+  "offer": {
+    "id": 2000,
+    "name": "Horské kolo",
+    "price": 355
+  },
+  "opponent": {
+    "id": 1001,
+    "firstname": "Antonín",
+    "lastname": "Podržkolo"
+  },
+  "chatId": 3000
+},
+{
+  "from": "2019-05-03",
+  "to": "2019-05-03",
+  "offer": {
+    "id": 2000,
+    "name": "Horské kolo",
+    "price": 355
+  },
+  "opponent": {
+    "id": 1001,
+    "firstname": "Antonín",
+    "lastname": "Podržkolo"
+  },
+  "chatId": 3000
+},
+{
+  "from": "2019-05-03",
+  "to": "2019-05-03",
+  "offer": {
+    "id": 2000,
+    "name": "Horské kolo",
+    "price": 355
+  },
+  "opponent": {
+    "id": 1001,
+    "firstname": "Antonín",
+    "lastname": "Podržkolo"
+  },
+  "chatId": 3000
+}]

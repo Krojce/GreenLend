@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.alert,
+.table {
+  margin-bottom: 0;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.full-page-bg {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+
+  background-image: url("./images/mainscreen_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.full-page-cover {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 4rem;
+  color: #fff;
+}
+
+.full-page-cover *:not(.card *) {
+  color: #fff;
+}
+
+.full-page-nav {
+  width: 100%;
+  height: 120px;
+  padding: 0;
+}
+
+.full-page-nav .navbar-collapse a {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-left: 1.5rem;
+}
+
+.full-page-searchbar {
+  width: 100%;
+  padding: 8rem 0 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-page-searchbar i {
+  font-size: 2.25rem;
+  margin-right: 0.5rem;
+}
+
+.full-page-searchbar input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: #fff;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.full-page-searchbar input::placeholder {
+  color: #fff;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ItemList {
+  column-count: 1;
+}
+
+@media (min-width: 992px) {
+  .ItemList {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 991px) {
+  .ItemList {
+    column-count: 2;
+  }
+}
+
+.offer-item {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
+  animation: fade-in 0.8s;
+  display: inline-block;
+  width: 100%;
+}
+
+.offer-item,
+.offer-item img,
+.offer-item .card-img-overlay {
+  border-radius: 1rem;
+  border: none;
+}
+
+.offer-item .card-img-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.75)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.45rem 0.65rem;
+}
+
+.offer-item .card-title {
+  margin-bottom: -0.25rem;
+}
+
+.offer-item .card-text {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.Sidebar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "onLeft sidebar";
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Sidebar-wrapper > .Sidebar-onLeft {
+  grid-area: onLeft;
+}
+
+.Sidebar-wrapper > .Sidebar {
+  grid-area: sidebar;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.Sidebar-wrapper > .Sidebar .card {
+  text-align: left;
+}
+
+.messagesGrid {
+  display: grid;
+  width: 100%;
+  height: calc(100vh - 86px);
+  grid-template-columns: 16rem 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "threads-heading messages-heading" "threads messages" "threads compose";
+}
+
+.messagesGrid > * {
+  border: solid #ddd;
+  border-width: 1px 0 0 1px;
+}
+
+.messagesGrid .threads-heading {
+  grid-area: threads-heading;
+}
+
+.messagesGrid .messages-heading {
+  grid-area: messages-heading;
+}
+
+.messagesGrid .messages-heading,
+.messagesGrid .threads-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.75rem;
+}
+
+.messagesGrid .threads {
+  grid-area: threads;
+}
+
+.messagesGrid .threads .thread {
+  padding: 0.5rem;
+}
+
+.messagesGrid .threads .thread.active {
+  background-color: #f2f2f2;
+}
+
+.messagesGrid .threads .thread div {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.messagesGrid .threads .thread div:first-child {
+  font-weight: bold;
+}
+
+.messagesGrid .threads .thread div:last-child {
+  font-style: italic;
+}
+
+.messagesGrid .threads .thread:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.messagesGrid .threads .thread.unread {
+  border-left: 2px solid #456;
+}
+
+.messagesGrid .messages {
+  grid-area: messages;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.messagesGrid .messages .message {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.messagesGrid .messages .message.in + .in,
+.messagesGrid .messages .message.out + .out {
+  margin-bottom: 0;
+}
+
+.messagesGrid .messages .message.in {
+  background-color: #f1f0f0;
+  margin-right: auto;
+}
+
+.messagesGrid .messages .message.out {
+  background-color: #28a745;
+  color: #fff;
+  margin-left: auto;
+}
+
+.messagesGrid .messages .load-more {
+  margin: 0 auto 1rem;
+}
+
+.messagesGrid .compose {
+  grid-area: compose;
+  padding: 0.25rem;
+}
+
+.ItemDetailModal .modal-content {
+  border: none;
+  border-radius: 1rem;
+}
+
+.ItemDetailModal .modal-body {
+  padding: 2rem;
+}
+
+.ItemDetailModal .modal-body > .row {
+  position: relative;
+  z-index: 1052;
+}
+
+.ItemDetailModal .curve_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("./images/modal_curve.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem;
+  z-index: 1051;
+}
+
+.ItemDetailModal .map-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1050;
+  border: none;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.ItemDetailModal .mapboxgl-canvas-container,
+.ItemDetailModal .mapboxgl-canvas {
+  border-radius: 1rem;
+}
+
+.ItemDetailModal img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.PopoverThumbnail .popover-body {
+  padding: 0.25rem;
+}
+
+.PopoverThumbnail img {
+  max-width: 100%;
+  border-radius: 0.15rem;
+}
+
+.MapScreenGrid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 16rem 1fr;
+  grid-template-areas: "sidebar map";
+}
+
+.MapScreenGrid .sidebar {
+  grid-area: sidebar;
+}
+
+.MapScreenGrid .map {
+  grid-area: map;
+}
